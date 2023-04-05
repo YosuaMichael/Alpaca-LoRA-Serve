@@ -16,7 +16,7 @@ def chat_stream(
     instruction,
     state_chatbot,
 ):
-    if len(context) > 150 or len(instruction) > 150:
+    if len(context) > 1500 or len(instruction) > 1500:
         raise gr.Error("context or prompt is too long!")
     
     # user input should be appropriately formatted (don't be confused by the function name)
